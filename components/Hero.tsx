@@ -53,7 +53,7 @@ export default function Hero({ videoSrc, videoYouTubeId }: HeroProps) {
             <Button href="#projects" variant="primary" size="lg">
               Explore Projects
             </Button>
-            {videoYouTubeId && (
+            {videoYouTubeId && /^[a-zA-Z0-9_-]+$/.test(videoYouTubeId) && (
               <Button 
                 href={`https://www.youtube.com/watch?v=${videoYouTubeId}`}
                 variant="secondary" 

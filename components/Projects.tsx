@@ -54,7 +54,7 @@ export default function Projects() {
               key={index} 
               hover
               className="flex flex-col h-full animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.15}s` } as React.CSSProperties}
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="text-5xl mb-4">{project.emoji}</div>
               <h3 className="text-heading-lg mb-3">{project.title}</h3>

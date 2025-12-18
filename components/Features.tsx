@@ -50,7 +50,7 @@ export default function Features() {
               key={index} 
               hover
               className="text-center animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.1}s` } as React.CSSProperties}
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="text-5xl mb-4">{feature.icon}</div>
               <h3 className="text-heading-md mb-3">{feature.title}</h3>
