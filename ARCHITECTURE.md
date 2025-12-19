@@ -147,10 +147,12 @@ className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
 ```
 
 ### Animation Delays
+{% raw %}
 ```tsx
 // Staggered animations using inline styles
 style={{ animationDelay: `${index * 0.1}s` }}
 ```
+{% endraw %}
 
 ### Conditional Rendering
 ```tsx

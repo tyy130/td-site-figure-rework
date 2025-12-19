@@ -329,6 +329,7 @@ export default function RootLayout({ children }) {
 
 ### Google Analytics
 
+{% raw %}
 ```tsx
 // app/layout.tsx
 <head>
@@ -343,6 +344,7 @@ export default function RootLayout({ children }) {
   }} />
 </head>
 ```
+{% endraw %}
 
 ### Plausible Analytics (Privacy-friendly)
 
