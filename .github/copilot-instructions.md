@@ -52,7 +52,7 @@ PR checklist for AI agents
 - Run `npm run build` and `npm run lint` locally; ensure no TypeScript/lint errors.
 - Keep changes small and focused (one visual/feature change per PR).
 - Update `ARCHITECTURE.md` or `README.md` when you change component contracts, tokens, or layout.
-- Verify visually at `http://localhost:3000` across mobile/tablet/desktop breakpoints.
+- Verify visually at the live site (https://tyy130.github.io/td-site-figure-rework) across mobile/tablet/desktop breakpoints.
 
 Notes & gotchas
 - No test harness exists; rely on `npm run build` for type-checking and manual verification.
