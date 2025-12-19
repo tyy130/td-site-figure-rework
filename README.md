@@ -14,21 +14,26 @@ This design system embodies:
 
 ## 🚀 Quick Start
 
+**View the live site:** https://tyy130.github.io/td-site-figure-rework
+
+> The project is published to GitHub Pages. For local development (contributors only), follow the steps below.
+
 ```bash
 # Install dependencies
 npm install
 
-# Run development server
+# Run development server (local)
 npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+Build & export static files (used for Pages deployment):
+
+```bash
+# Build and export static files to ./out
+npm run export
+```
+
+(If you need a production server for local testing, `npm run build` then `npm start` will run Next's server, but GitHub Pages serves the exported static files.)
 
 ## 📁 Project Structure
 

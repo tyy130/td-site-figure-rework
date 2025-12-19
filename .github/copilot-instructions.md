@@ -4,11 +4,18 @@ Overview
 - Short: This is a small, dark-themed Next.js 14 (App Router) + TypeScript + Tailwind project that implements a reusable design system and a single-page site.
 - Primary sources of truth: `README.md`, `ARCHITECTURE.md`, `tailwind.config.ts`, `app/globals.css`.
 
-Local dev & verification
-- Install & run: `npm install` → `npm run dev` (opens on `http://localhost:3000`).
-- Build & verify: `npm run build` (Next builds and surface TypeScript errors) → `npm start` to serve production build.
-- Lint: `npm run lint` (uses `next lint`).
-- No automated tests or test runner found in repo — assume manual visual testing and `npm run build` for TypeScript validation.
+Quick commands
+- View live site: https://tyy130.github.io/td-site-figure-rework
+- For contributors (local dev): `npm install && npm run dev` (local) 
+- Build (type-checks): `npm run build` (Next surfaces TypeScript errors)
+- Export (used for Pages): `npm run export` (outputs `./out`)
+- Lint: `npm run lint`
+
+Key architecture & conventions
+- App Router: pages in `/app`. Default components are **Server Components**; add `'use client'` for client behavior (e.g., `Navigation`, `Hero`).
+- Components: small, focused files in `/components` with `export default` and inline `Props` interfaces.
+- Styling: Tailwind tokens (`tailwind.config.ts`) and global utilities/animations in `app/globals.css` (e.g., `.glass`, `.text-gradient`, `.hover-lift`).
+- Minimal JS: use server components; add client components only for DOM/interaction needs.
 
 Architecture & patterns (why & how)
 - App Router: all routes / pages live in `/app`. Default components are Server Components; add `'use client'` at file top for client components (hooks, window, event listeners).
